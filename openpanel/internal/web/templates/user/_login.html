@@ -8,7 +8,7 @@
     <meta name="author" content="Stefan Pejcic">
     <meta name="robots" content="noindex">
     <link rel="shortcut icon" type="image/x-icon" href="{{if .Favicon}}{{.Favicon}}{{else}}{{static "images/favicon.svg"}}{{end}}">
-    <title>{{.Title}} - {{if .BrandName}}{{.BrandName}}{{else}}OpenPanel{{end}}</title>
+    <title>{{.T.Get .Title}} - {{if .BrandName}}{{.BrandName}}{{else}}OpenPanel{{end}}</title>
     <script src="{{static "vendor/tailwindcss/tailwindcss-cdn-3.4.10.js"}}"></script>
 
     <!-- CSRF protection -->

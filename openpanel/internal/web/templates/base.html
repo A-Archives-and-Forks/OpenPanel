@@ -11,7 +11,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>{{.Title}} - {{if .BrandName}}{{.BrandName}}{{else}}OpenPanel{{end}}</title>
+    <title>{{.T.Get .Title}} - {{if .BrandName}}{{.BrandName}}{{else}}OpenPanel{{end}}</title>
     <link rel="icon" type="image/x-icon" href="{{if .Favicon}}{{.Favicon}}{{else}}{{static "images/favicon.svg"}}{{end}}">
     <meta name="robots" content="noindex,nofollow">
     <script type="text/javascript"> var csrf_token = "{{.CSRFToken}}"; </script>
